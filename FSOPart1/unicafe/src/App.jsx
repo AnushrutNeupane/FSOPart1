@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Stats = ({ good, neutral, bad }) => {
   const total = good + neutral + bad;
@@ -23,9 +23,7 @@ const Stats = ({ good, neutral, bad }) => {
   );
 };
 
-const Button = ({ onClick, text }) => (
-  <button onClick={onClick}>{text}</button>
-);
+const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>;
 
 const App = () => {
   const [good, setGood] = useState(0);
